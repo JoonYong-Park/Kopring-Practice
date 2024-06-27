@@ -7,8 +7,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.RestControllerAdvice
 
-@RestControllerAdvice(basePackageClasses = [ExceptionApiController::class]) // 해당 패키지에만 적용
-@Slf4j
+//@RestControllerAdvice(basePackageClasses = [ExceptionApiController::class]) // 해당 패키지에만 적용
 class GlobalControllerAdvice {
 
     @ExceptionHandler(value = [RuntimeException::class]) // 실행중 발생하는 모든 예외를 처리
